@@ -1,0 +1,18 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: task01
+    apt: 
+      name: apt
+      state: present
+  - name: task02
+    apt:
+      name: tree
+      state: absent
+  - name: task03
+    apt: 
+     name: wget
+     state: present
+  
+
