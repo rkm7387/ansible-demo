@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: i want to install apache2 model
+    apt:
+      name: apache2
+      state: present
+  - name: i want to start apache2 webserver
+    
+

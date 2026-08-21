@@ -1,0 +1,22 @@
+---
+- mystudents:
+  - name: anil
+    phone: 123456
+    address:
+      doorno:
+      street:
+      pincode:
+  
+  - name: sunil
+    phone: 123465789
+    address:
+      doorno:
+      street:
+      pincode:
+
+  - name: maha
+    phone: 741852963
+    address:
+      doorno:
+      street:
+      pincode:
