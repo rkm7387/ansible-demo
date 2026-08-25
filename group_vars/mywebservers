@@ -1,4 +1,3 @@
 ---
-ansible_user:ubuntu
-mywebpackonubuntu:apache2
-mywebpackonredhat:httpd
+mywebpackonubuntu: apache2
+mywebpackonredhat: httpd
