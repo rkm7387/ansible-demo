@@ -1,0 +1,4 @@
+---
+ansible_user:ubuntu
+mywebpackonubuntu:apache2
+mywebpackonredhat:httpd

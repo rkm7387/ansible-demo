@@ -16,7 +16,3 @@
 [myRedHatservers]
 172.31.45.8
 
-[mywebservers:vars]
-ansible_user=ubuntu
-mywebpackonubuntu=apache2222
-mywebpackonredhat=httpd
