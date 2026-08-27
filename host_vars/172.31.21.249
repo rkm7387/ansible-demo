@@ -1,2 +1,6 @@
 ---
 myjavapacakgeonredhat: java-17-amazon-corretto-devel
+
+# ansible engg gives more priority to host_vars than group_vars. 
+# So, if the same variable is defined in both host_vars and group_vars, 
+# the value from host_vars will be used for that specific host.
