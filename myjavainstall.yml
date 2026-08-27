@@ -1,0 +1,16 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks:
+  - name: install java on debian nodes (apt-get install xxxxxx)
+    apt:
+      name: "{{ myjavapacakgeonubuntu }}"
+      state: present
+    when: ansible_os_family == "Debian"
+  
+  - name: install java on redhat nodes (yum install xxxxxx)
+    yum:
+      name: "{{ myjavapacakgeonredhat }}"
+      state: present
+    when: ansible_os_family == "RedHat" 
+      
