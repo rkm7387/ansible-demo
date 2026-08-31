@@ -8,3 +8,7 @@
         name: httpd
         state: present
         update_cache: yes
+    - name: i want to create a folder
+      file:
+        state: directory
+        path: /home/maha/myfolder
