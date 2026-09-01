@@ -1,8 +1,8 @@
 #SPDX-License-Identifier: MIT-0
 ---
 # tasks file for mywebrole
-- name: Install  webserve on debian nodes
-  apt:
-    name: "{{mywebserver_var2}}"
+- name: Install webserver on debian nodes
+  ansible.builtin.apt:
+    name: apache2
     state: present
-  notify: restartapache
+    update_cache: yes
