@@ -3,5 +3,5 @@
 # handlers file for mywebrole
 - name: restartapache
   service:
-    name: {{mywebserver_var}}
+    name: "{{mywebserver_var2}}"
     state: restarted
