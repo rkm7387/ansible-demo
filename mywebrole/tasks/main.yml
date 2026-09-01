@@ -1,7 +1,7 @@
 #SPDX-License-Identifier: MIT-0
 ---
 # tasks file for mywebrole
-- name: Install  webserve on debian nodes
+- name: Install  webserver on debian nodes
   apt:
     name: "{{mywebserver_var2}}"
     state: present
