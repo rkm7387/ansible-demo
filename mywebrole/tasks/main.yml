@@ -1,8 +1,12 @@
-#SPDX-License-Identifier: MIT-0
 ---
 # tasks file for mywebrole
-- name: Install webserver on debian nodes
-  ansible.builtin.apt:
-    name: apache2
+- name: Install webserver on RedHat nodes
+  ansible.builtin.package:
+    name: httpd
     state: present
-    update_cache: yes
+
+- name: Ensure httpd service is running
+  ansible.builtin.service:
+    name: httpd
+    state: started
+    enabled: yes
