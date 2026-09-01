@@ -2,4 +2,4 @@
 ---
 # vars file for mywebrole
 mywebrole_var1: "This is mywebrole variable"
-mywebserver_var2: "apache222"
+mywebserver_var2: "apache2"
