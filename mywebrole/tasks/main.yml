@@ -1,31 +1,8 @@
+#SPDX-License-Identifier: MIT-0
 ---
 # tasks file for mywebrole
-
-# --- For Ubuntu / Debian nodes ---
-- name: Install Apache on Debian/Ubuntu
-  ansible.builtin.apt:
-    name: apache2
+- name: Install  webserve on debian nodes
+  apt:
+    name: "{{mywebserver_var2}}"
     state: present
-    update_cache: yes
-  when: ansible_os_family == "Debian"
-
-- name: Ensure Apache is running on Debian/Ubuntu
-  ansible.builtin.service:
-    name: apache2
-    state: started
-    enabled: yes
-  when: ansible_os_family == "Debian"
-
-# --- For Amazon Linux / CentOS / RHEL nodes ---
-- name: Install Apache on RedHat/Amazon Linux
-  ansible.builtin.package:
-    name: httpd
-    state: present
-  when: ansible_os_family == "RedHat"
-
-- name: Ensure Apache is running on RedHat/Amazon Linux
-  ansible.builtin.service:
-    name: httpd
-    state: started
-    enabled: yes
-  when: ansible_os_family == "RedHat"
+  notify: restartapache
