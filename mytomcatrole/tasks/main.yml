@@ -5,5 +5,5 @@
 - include_tasks: downloadtomcat.yml
 - include_tasks: usergroup.yml
 - include_tasks: permission.yml
-- inlcude_tasks: tomcatservice.yml
+- include_tasks: tomcatservice.yml
 - include_tasks: tomcatstart.yml
