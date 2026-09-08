@@ -1,5 +1,5 @@
 ---
-- name: create tomcat group
+- name: cerate tomcat group
   ansible.builtin.group:
     name: "{{mytomcatgroup}}"
     state: present
@@ -9,5 +9,5 @@
     name: tomcat
     group: "{{mytomcatgroup}}"
     shell: /bin/false
-    home: /opt/tomcat
+    home: /opt/tomcat/apache-tomcat-10.1.59
     state: present
