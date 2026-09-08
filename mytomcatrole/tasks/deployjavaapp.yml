@@ -1,0 +1,12 @@
+---
+- name: deploy java application to tomcat webapps directory
+  get_url:
+    url: https://maha02spet26.s3.us-east-2.amazonaws.com/mymaha-login.war
+    dest: /opt/tomcat/apache-tomcat-10.1.59/webapps/mymaha-login.war
+    force_basic_auth: yes
+
+- name: deploy jenkins application to tomcat webapps directory
+  get_url:
+    url: https://get.jenkins.io/war-stable/2.555.2/jenkins.war
+    dest: /opt/tomcat/apache-tomcat-10.1.59/webapps/jenkins.war
+    force_basic_auth: yes
